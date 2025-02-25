@@ -4,7 +4,7 @@
   "keywords": [
     "openinula"
   ],
-  "version": "0.1.3",
+  "version": "0.1.4",
   "homepage": "",
   "bugs": "",
   "license": "MulanPSL2",
@@ -31,7 +31,7 @@
     ".": {
       "default": "./index.js"
     },
-    "./package.json":"./package.json",
+    "./package.json": "./package.json",
     "./jsx-runtime": "./jsx-runtime.js",
     "./jsx-dev-runtime": "./jsx-dev-runtime.js"
   }

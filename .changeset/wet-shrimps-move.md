@@ -1,5 +1,0 @@
----
-"openinula": patch
----
-
-ci: revert
