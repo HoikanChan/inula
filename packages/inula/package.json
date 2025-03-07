@@ -23,11 +23,11 @@
     "test": "jest --config=jest.config.js",
     "watch-test": "yarn test --watch --dev"
   },
-  "types": "@types/index.d.ts",
+  "types": "./build/@types/index.d.ts",
   "exports": {
     ".": {
       "types": "./@types/index.d.ts",
-      "default": "./index.js"
+      "default": "./build/index.js"
     },
     "./package.json": "./package.json",
     "./jsx-runtime": "./jsx-runtime.js",

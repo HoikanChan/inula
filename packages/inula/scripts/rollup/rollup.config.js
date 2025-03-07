@@ -26,7 +26,7 @@ const extensions = ['.js', '.ts'];
 
 const libDir = path.join(__dirname, '../..');
 const rootDir = path.join(__dirname, '../..');
-const outDir = path.join(rootDir, 'build', 'inula');
+const outDir = path.join(rootDir, 'build');
 
 if (!fs.existsSync(path.join(rootDir, 'build'))) {
   fs.mkdirSync(path.join(rootDir, 'build'));
@@ -117,11 +117,11 @@ function genJSXRuntimeConfig(mode) {
     input: path.resolve(libDir, 'src', 'jsx-runtime.ts'),
     output: [
       {
-        file: outputResolve('jsx-runtime.js'),
+        file: 'jsx-runtime.js',
         format: 'cjs',
       },
       {
-        file: outputResolve('jsx-runtime.esm-browser.js'),
+        file: 'jsx-runtime.esm-browser.js',
         format: 'esm',
       },
     ],
@@ -133,7 +133,7 @@ function genJSXDEVRuntimeConfig(mode) {
   return {
     input: path.resolve(libDir, 'src', 'jsx-dev-runtime.ts'),
     output: {
-      file: outputResolve('jsx-dev-runtime.js'),
+      file: 'jsx-dev-runtime.js',
       format: 'cjs',
     },
     plugins: [...getBasicPlugins(mode)],

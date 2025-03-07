@@ -13,8 +13,8 @@
  * See the Mulan PSL v2 for more details.
  */
 
-import path from 'path';
-import webpack from 'webpack';
+const path = require('path');
+const webpack = require('webpack');
 
 // 用于 panel 页面开发
 module.exports = {

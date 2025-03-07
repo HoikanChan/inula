@@ -4,7 +4,7 @@
   "description": "Inula chrome dev extension",
   "main": "",
   "scripts": {
-    "build": "webpack --config ./webpack.config.js",
+    "build": "echo todo",
     "watch": "webpack --config ./webpack.config.js --watch",
     "build-dev": "webpack --config ./webpack.dev.js",
     "start": "npm run build && webpack serve --config ./webpack.dev.js",

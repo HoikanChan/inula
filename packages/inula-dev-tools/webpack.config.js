@@ -13,9 +13,9 @@
  * See the Mulan PSL v2 for more details.
  */
 
-import path from 'path';
-import webpack from 'webpack';
-import fs from 'fs';
+const path = require('path');
+const webpack = require('webpack');
+const fs = require('fs');
 
 function handleBuildDir() {
   const staticDir = path.join(__dirname, 'build');
